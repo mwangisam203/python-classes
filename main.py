@@ -34,3 +34,4 @@ print(circle.radius)
 print(circle.filled)
 
 print(triangle.height)
+print(f"{triangle.height} cm")
