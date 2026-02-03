@@ -45,3 +45,8 @@ triangle = Triangle("brown", True, 13, 20)
 print(circle.color) 
 print(circle.radius) 
 print(circle.filled)
+
+print(triangle.height) 
+print(f"{triangle.height}cm") 
+print(triangle.area())
+print(square.area())
