@@ -25,6 +25,12 @@ class Triangle(Shape):
         self.height = height
 
 
-circle = Circle(color="grey", filled = True , radius=7)
+circle = Circle("grey", True , 7)
+square = Square("Violet", False, 15)
+triangle = Triangle("brown", True, 13, 20)
 
 print(circle.color)
+print(circle.radius)
+print(circle.filled)
+
+print(triangle.height)
