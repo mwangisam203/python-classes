@@ -75,7 +75,7 @@ class Square(Shapes):
     def area(self):
         return self.length ** 2
     
-class Pizza():
+class Pizza(Circle):
     def __init__(self,cheesepepee, radius):
         self.cheesepepee = cheesepepee
         self.radius = radius
@@ -93,7 +93,7 @@ class Triangle(Shapes):
     def area(self):
         return self.base * self.height * 0.5
     
-shapes = [Circle(14), Square(8), Triangle(8, 10)]
+shapes = [Circle(14), Square(8), Triangle(8, 10), Pizza("cheesepepee", 21)]
 
 for shape in shapes:
     print(shape.area())
