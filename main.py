@@ -1,5 +1,6 @@
 #super(): =>function used in a child class to call methods from the parent class (superclass)
 import math
+from abc import ABC, abstractmethod
 
 class Shape:
     def __init__(self, color, filled, unit="cm"):
@@ -53,7 +54,9 @@ print(square.area())
 
 #Polymorphism => have many forms or faces
 class Shapes:
-    pass
+    @abstractmethod
+    def area(self):
+        pass
 
 class Circles(Shapes):
     def __init__(self, radius):
@@ -80,5 +83,11 @@ class Triangle(Shapes):
         self.height = height
 
     def area(self):
-        
+        return self.base * self.height * 0.5
+    
+shapes = [Circle(14), Square(8), Triangle(8, 10)]
+
+for shape in shapes:
+    print(shape.area())
+
         
