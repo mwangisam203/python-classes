@@ -98,4 +98,29 @@ shapes = [Circle(14), Square(8), Triangle(8, 10), Pizza("cheesepepee", 21)]
 for shape in shapes:
     print(shape.area())
 
-        
+
+#Duck Typing => another way to achieve polymorphism beside inheritance
+# Object must have the miniumum necessary attributes/methods
+
+class Animal:
+    alive  = True
+
+class Cat(Animal):
+    def speak(self):
+        print("cat meows!1")
+
+class Donkey(Animal):
+    def speak(self):
+        print("Hoohiihoo.. prrrr!!")
+
+class Lion(Animal):
+    def speak(self):
+        print("Roooaaarrrr !!")
+
+
+
+animals = [Cat(), Donkey(), Lion()]
+for animal in animals:
+    animal.speak()
+
+    print(animal.alive)   
