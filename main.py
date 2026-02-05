@@ -117,9 +117,14 @@ class Lion(Animal):
     def speak(self):
         print("Roooaaarrrr !!")
 
+class Lorry:
+    alive = False
+    def speak(self):
+        print("parariraa poriporii")
 
 
-animals = [Cat(), Donkey(), Lion()]
+
+animals = [Cat(), Donkey(), Lion(), Lorry()]
 for animal in animals:
     animal.speak()
 
